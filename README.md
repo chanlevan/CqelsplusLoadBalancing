@@ -13,7 +13,7 @@ Also, you have to download two executable files from this link: https://drive.go
 
 The dcqelsserver.jar works as the server. The subscriber.jar works as the client. They communicate with each other via the Websocket protocol.
 
-All of the downloaded files and folders MUST BE put in the  the folder F. Otherwise, you will get the error.
+All of the downloaded files and folders MUST BE put in the folder F. Otherwise, you will get the error.
 
 In folder F, you have to create the folder name CQELS_DB actings as the home folder for the CQELS+ engine.
 ### 2.1. Experiment: Increasing the number of CQELS+ instances: 
