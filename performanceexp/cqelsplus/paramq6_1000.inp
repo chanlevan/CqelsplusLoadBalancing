@@ -1,0 +1,12 @@
+CQELS_HOME /media/D/Dev/LSBdataset/Home4Engine
+QUERY_NAME /media/D/Dev/LSBdataset/queries/query6.txt
+WINDOW_SIZE 1000
+NUMBER_OF_QUERIES 1000
+STREAM_SIZE 16000
+STREAM_SOURCE http://deri.org/poststream /media/D/Dev/LSBdataset/16000/rdfPostStream16000.n3 http://deri.org/likedpoststream /media/D/Dev/LSBdataset/16000/rdfPostLikeStream16000.n3
+STATIC_INVOLVED true
+STATIC_SOURCE default /media/D/Dev/LSBdataset/16000/mr0_sibdataset16000.n3
+STARTING_COUNT 4525399
+OUTPUT_DES /media/D/Dev/Genoutput/
+RESULTLOG query6_1000.log
+EXPOUT query6_1000.out
