@@ -1,7 +1,7 @@
 #Experimentation with CQELS+ engine.
 All experiments run on Java 1.7. You have to download all of the files and folders in this repository and put int the folder F. 
 ## 1. Performance comparison between CQELS+ and CQELS Linked Stream Processing engine experiment.
-This experiment aims to compare the performance between CQELS+ and CQELS Linked Stream Processing engine.
+This experiment aims to compare the performance between CQELS+ and CQELS Linked Stream Processing engine. Please read the instruction here: https://github.com/chanlevan/CqelsplusLoadBalancing/blob/master/performanceexp/Readme.md
 ## 2. Load-balancing experiments with CQELS+ Linked Stream processing engine.
 This experiment tests the scalability of the CQELS+ system with increasing number of CQELS+ instances, and with increasing number of input streams.
 ###Prerequisite
