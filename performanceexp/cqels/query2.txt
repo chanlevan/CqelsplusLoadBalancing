@@ -1,0 +1,10 @@
+PREFIX sib:  <http://www.ins.cwi.nl/sib/vocabulary/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX sioc: <http://rdfs.org/sioc/ns#> 
+PREFIX sibp: <http://www.ins.cwi.nl/sib/person/> 
+ select ?post 
+ where{ 
+ STREAM <http://deri.org/poststream> [RANGE 1s] 
+ {?user sioc:creator_of ?post.} 
+ ?user sioc:account_of <http://www.ins.cwi.nl/sib/person/p984>. 
+} 
