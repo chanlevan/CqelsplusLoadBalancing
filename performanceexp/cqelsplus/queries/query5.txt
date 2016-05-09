@@ -1,0 +1,8 @@
+ PREFIX sib:  <http://www.ins.cwi.nl/sib/vocabulary/> 
+ PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+ PREFIX sioc:<http://rdfs.org/sioc/ns#> 
+ select ?friend1 ?friend2 ?photo 
+ where{ 
+ STREAM <http://deri.org/likedphotostream> [RANGE 900s] {?friend2 sib:like ?photo.}  
+ STREAM <http://deri.org/photostream> [RANGE 86400s] {?photo sib:usertag ?friend1. }	
+ ?friend1 foaf:knows ?friend2.} 

@@ -1,0 +1,14 @@
+PREFIX sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX sioc: <http://rdfs.org/sioc/ns#>
+SELECT ?user ?friend ?comment ?channel
+WHERE{
+STREAM <http://deri.org/poststream> [RANGE 60s]
+{
+   ?channel sioc:container_of ?post. 
+   ?comment sioc:reply_of ?post. 
+}
+STREAM <http://deri.org/likedpoststream> [RANGE 100s]
+{?friend sib:like ?comment.}
+?user foaf:knows ?friend.
+?user sioc:subscriber_of ?channel.}

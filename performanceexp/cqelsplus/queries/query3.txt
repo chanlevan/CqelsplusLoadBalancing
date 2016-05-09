@@ -1,0 +1,10 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX sioc: <http://rdfs.org/sioc/ns#> 
+PREFIX sibp: <http://www.ins.cwi.nl/sib/person/> 
+ select ?friend ?post 
+ where{ STREAM <http://deri.org/poststream> [RANGE 7200s] {
+ ?friend sioc:creator_of ?post.
+ } 
+ ?user foaf:knows ?friend. 
+ ?user sioc:account_of <http://www.ins.cwi.nl/sib/person/p984>.
+ } 
